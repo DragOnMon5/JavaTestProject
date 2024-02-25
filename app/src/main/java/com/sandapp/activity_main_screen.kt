@@ -13,12 +13,5 @@ class activity_main_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_screen)
-
-
-        var imageButton: ImageButton = findViewById(R.id.imageButton)
-        var numberOfClicks: Int = 0
-        /*imageButton.setOnKeyListener{
-            imageButton.setBackgroundColor(true)
-        }*/
     }
 }

@@ -1,6 +1,7 @@
 package com.sandapp
 
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
@@ -38,8 +39,19 @@ class MainActivity : ComponentActivity() {
         }*/
 
         setContentView(R.layout.activity_main_screen)
+        var imageButton: ImageButton = findViewById(R.id.imageButton)
+        var numberOfClicks: Int = 0
+
+        imageButton.setOnClickListener { onPurpleClick(imageButton) }
+
 
     }
+}
+
+fun onPurpleClick(imageButton : ImageButton){
+    imageButton.rotation += 2
+    imageButton.scaleX += 0.04f
+    imageButton.scaleY += 0.04f
 }
 
 @Composable
