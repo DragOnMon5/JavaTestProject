@@ -12,9 +12,10 @@ import com.sandapp.ui.theme.SAndAppTheme
 
 
 class MainActivity : ComponentActivity() {
+    var screen_id = R.layout.activity_main_screen
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_screen)
+        setContentView(screen_id)
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
         var imageButton: ImageButton = findViewById(R.id.imageButton)
         var numberOfClicks: Int = 0
@@ -23,15 +24,18 @@ class MainActivity : ComponentActivity() {
 
     }
 
+    fun onPurpleClick(imageButton: ImageButton) {
+        imageButton.rotation += 2
+        imageButton.scaleX += 0.04f
+        imageButton.scaleY += 0.04f
+        if (imageButton.scaleX >= 5f) {
+            changeLayout()
+        }
+    }
+
     fun changeLayout() {
         setContentView(R.layout.side_screen)
     }
-}
-
-fun onPurpleClick(imageButton: ImageButton) {
-    imageButton.rotation += 2
-    imageButton.scaleX += 0.04f
-    imageButton.scaleY += 0.04f
 }
 
 
