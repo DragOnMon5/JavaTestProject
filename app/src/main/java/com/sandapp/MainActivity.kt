@@ -26,8 +26,6 @@ class MainActivity : ComponentActivity() {
     fun changeLayout() {
         setContentView(R.layout.side_screen)
     }
-
-
 }
 
 fun onPurpleClick(imageButton: ImageButton) {
