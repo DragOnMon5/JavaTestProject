@@ -1,25 +1,13 @@
 package com.sandapp
 
-import  android.content.pm.ActivityInfo
 import android.os.Bundle
-import android.widget.ImageButton
-import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.sandapp.databinding.ActivityMainScreenBinding
-import com.sandapp.ui.theme.SAndAppTheme
-import java.math.BigDecimal
-import java.math.RoundingMode
-
 import kotlin.math.round
-
 
 class MainActivity : ComponentActivity() {
     lateinit var binding: ActivityMainScreenBinding
-    var score:Float = 0f
+    var score: Float = 0f
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
@@ -39,7 +27,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    fun changeLayout(screen_id : Int) {
+    fun changeLayout(screen_id: Int) {
         setContentView(screen_id)
     }
 
@@ -48,18 +36,5 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Print(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "$name",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SAndAppTheme {
-        Print("Android")
-    }
-}
+
