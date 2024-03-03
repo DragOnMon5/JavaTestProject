@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Здесь было имя проекта</string>
+    <string name="app_author">Шогенов Владислав</string>
+    <string name="button_click_reverse_counter">Нажимайте много раз</string>
 </resources>

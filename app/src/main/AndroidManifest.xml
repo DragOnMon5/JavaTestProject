@@ -13,7 +13,7 @@
         android:theme="@style/Theme.SAndApp"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityMainScreen"
+            android:name=".ActivitySettingsScreen"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -6,8 +6,8 @@ import com.sandapp.databinding.ActivityMainScreenBinding
 import kotlin.math.round
 
 class MainActivity : ComponentActivity() {
-    lateinit var binding: ActivityMainScreenBinding
-    var score: Float = 0f
+    private lateinit var binding: ActivityMainScreenBinding
+    private var score: Float = 0f
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)

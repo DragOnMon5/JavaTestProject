@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:background="#414A4F"
     android:orientation="horizontal"
-    tools:context=".ActivityMainScreen" >
+    tools:context=".ActivitySettingsScreen" >
 
     <TextView
         android:id="@+id/textScore"
         android:layout_width="158dp"
         android:layout_height="46dp"
-        android:text="Нажимайте много раз"
+        android:text="@string/button_click_reverse_counter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
